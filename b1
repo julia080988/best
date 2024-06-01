@@ -1,0 +1,7 @@
+ymaps3.import('@yandex/controls-extra').then(({YMapOpenMapsButton}) => {
+  const map = new ymaps3.YMap(document.getElementById('app'), {
+    location: LOCATION,
+  });
+
+  map.addChild(new YMapOpenMapsButton(...))
+});
